@@ -17,6 +17,28 @@
   font-size: 1.3rem;
 }
 
+.white-font {
+  color: white;
+}
+
+#portfolio div.row div.portfolio-item {
+  background-color: white;
+}
+
+@media only screen and (max-width: 990px) {
+  div.portfolio-item {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #skills div.row div.col-md-4,
+  #tools div.row div.col-md-4 {
+    width: 33.3%;
+  }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .contact-mobile-row {
     flex-direction: column;
@@ -27,5 +49,9 @@
     flex: 0 0 100%;
     max-width: 100%;
     margin: 1rem;
+  }
+
+  .half-width {
+    width: 50% !important;
   }
 }
