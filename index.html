@@ -1,980 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>Tia Kim</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 
-    <!-- Custom fonts for this template -->
-    <link
-      href="vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet" />
+    <title>Tia Kim</title>
   </head>
+  <body>
+    <!-- <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-  <body id="page-top" class="container-fluid p-0">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Tia Kim</a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tools">Tools</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link"><span>01</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link"
+              ><span>02</span>Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#skills" class="navigation__link"
+              ><span>03</span>Skills and Tools</a
+            >
+          </li>
+
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link"
+              ><span>04</span>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div> -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light navbar-custom p-3"
+    >
+      <a class="navbar-brand navbar-custom__brand" href="#">THK</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills & Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Full Stack Web Developer</div>
-          <div class="intro-heading text-uppercase">Tia Kim</div>
-          <a
-            class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-            href="tia-kim-resume.pdf"
-            target="_blank"
-            >View My Resume</a
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main u-margin-bottom-small"
+            >Software Engineer</span
           >
-        </div>
+          <span class="heading-primary--sub">Tia Kim</span>
+        </h1>
+
+        <a
+          href="tia-kim-resume.pdf"
+          class="btn btn--white btn--animated"
+          target="_blank"
+          >View my resume</a
+        >
       </div>
     </header>
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About Me</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
+    <main>
+      <section class="section-about" id="about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">About me</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="img/about/cal.PNG"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>May 2019</h4>
-                    <h4 class="subheading">Graduation at UC Berkeley</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      Graduated from UC Berkeley with a Bachelor's Degree in
-                      Applied Mathematics and Data Science
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="img/about/sd.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2019</h4>
-                    <h4 class="subheading">First day at my first job</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      Started working as a Business Intelligence Analyst in
-                      Carlsbad, CA
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="img/about/3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>Oct 2020</h4>
-                    <h4 class="subheading">
-                      Finished a Full Stack Web Development program
-                    </h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      Finished a 14-week full stack web development program in
-                      Irvine, CA to become a professonal software engineer!
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="img/about/my-pic.JPG"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>Hi, nice to meet you</h4>
-                    <h4 class="subheading">What's Next?!</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      Ready to be part of interesting and meaningful projects at
-                      your company!
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col portfolio-item mx-2">
-            <a
-              class="portfolio-link mt-2"
-              data-toggle="modal"
-              href="#portfolioModal1"
-            >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="img/portfolio/oui-eat-thumbnail-1.PNG"
-                alt=""
-              />
-            </a>
-            <div class="portfolio-caption">
-              <h4>OUI EAT</h4>
-              <p class="text-muted">Inspired by Uber Eats</p>
-              <p>
-                <a href="https://github.com/taehykim/oui-eat" target="_blank"
-                  >GitHub</a
-                >
-                <a href="https://ouieat.taehykim.com/" target="_blank">Live</a>
-              </p>
-            </div>
-          </div>
-          <div class="col portfolio-item mx-2">
-            <a
-              class="portfolio-link"
-              data-toggle="modal"
-              href="#portfolioModal2"
-            >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="img/portfolio/cykel-thumbnail-1.PNG"
-                alt=""
-              />
-            </a>
-            <div class="portfolio-caption">
-              <h4>CYKEL</h4>
-              <p class="text-muted">For Bike Lovers</p>
-              <p>
-                <a
-                  href="https://github.com/taehykim/bike-stations-around-the-world"
-                  target="_blank"
-                  >GitHub</a
-                >
-                <a
-                  href="https://taehykim.github.io/bike-stations-around-the-world/"
-                  target="_blank"
-                  >Live</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col portfolio-item mx-2">
-            <a
-              class="portfolio-link mt-2"
-              data-toggle="modal"
-              href="#portfolioModal3"
-            >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="img/portfolio/chanel-thumbnail.JPEG"
-                alt=""
-              />
-            </a>
-            <div class="portfolio-caption">
-              <h4>CHANEL STORE</h4>
-              <p class="text-muted">Summer Ready with Chanel</p>
-              <p>
-                <a
-                  href="https://github.com/taehykim/chanel-store"
-                  target="_blank"
-                  >GitHub</a
-                >
-                <a href="https://coffeefarm.taehykim.com/" target="_blank"
-                  >Live</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">Hello World!</h3>
+            <p class="paragraph">
+              My name is Tia. I recently graduated from UC Berkeley with a
+              degree in Applied Mathematics. Shortly after graduating, I started
+              working as a Business Intelligence Analyst in San Diego,
+              California. As a BI analyst, I had the opportunity to directly
+              work with the engineering team to build small internal web pages
+              for their Sales Team and this is when I realized that I really
+              enjoy building and creating things on the web.
+            </p>
 
-    <!-- skills -->
-    <section id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Skills</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/color/480/000000/javascript.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">JavaScript</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/color/480/000000/react-native.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">React.js</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/color/480/000000/nodejs.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">Node.js</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/color/480/000000/postgreesql.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">PostgreSQL</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/express.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">Express.js</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/html-icon.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">HTML5</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/css.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">CSS3</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/color/480/000000/bootstrap.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">Bootstrap4</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/ios-filled/500/000000/jquery.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">jQuery</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="tools" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Tools</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/fluent/240/000000/github.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">GitHub</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/vs-code.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">VS Code</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img
-                src="https://img.icons8.com/color/480/000000/npm.png"
-                class="developer-icon"
-              />
-            </span>
-            <h4 class="service-heading">npm</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/git.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">Git</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/babel.svg" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">Babel</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/webpack.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">webpack</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/aws.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">AWS</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/nginx.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">Nginx</h4>
-          </div>
-          <div class="col-md-4 half-width">
-            <span class="fa-stack fa-4x">
-              <img src="img/skills/ubuntu.png" class="developer-icon" />
-            </span>
-            <h4 class="service-heading">Ubuntu</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Me</h2>
-            <h3 class="section-subheading white-font">
-              Open to new opportunities!
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I am ready for new adventures as a software engineer!
             </h3>
-          </div>
-        </div>
-        <div class="row contact-mobile-row">
-          <div class="col d-flex justify-content-center contact-mobile-col">
-            <span class="contact-details">
-              <i class="fas fa-map-marker-alt fa-lg mr-1"></i> Orange County, CA
-            </span>
-          </div>
-          <div class="col d-flex justify-content-center contact-mobile-col">
-            <span class="contact-details"
-              ><i class="far fa-envelope fa-lg mr-1"></i
-              ><a href="mailto:tiarekim@gmail.com" class="white-font"
-                >tiarekim@gmail.com</a
-              >
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
+            <p class="paragraph">
+              Recently, I finished a 14-week full stack web development program
+              in Irvine, California. A few technologies that I've been using are
+              HTML5, CSS, Sass, Boostrap4, Flexbox, jQuery, React.js, Node.js,
+              Express.js, PostgreSQL, Git, webpack, npm, Babel, and more.
+            </p>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Tia Kim 2020</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://github.com/taehykim" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/tennikim/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="far fa-envelope"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Outside of work ...
+            </h3>
+            <p class="paragraph">
+              I enjoy being in the nature, exploring and trying new coffee,
+              weight lifting, rock climbing and learning new languages and
+              culture!
+            </p>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal1"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+            <a href="#projects" class="btn-text"
+              >Here are some of my projects &rarr;</a
+            >
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/road-trip.JPG"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="img/coffee-art.JPG"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/tia-kim.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Oui Eat</h2>
-                  <p class="item-intro text-muted">
-                    A full stack food-ordering web application
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/oui-eat-thumbnail-1.PNG"
-                    alt=""
-                  />
-                  <p>
-                    <a
-                      href="https://github.com/taehykim/oui-eat"
-                      class="link"
-                      target="_blank"
-                      >GitHub</a
-                    >
-                    <a
-                      href="https://ouieat.taehykim.com/"
-                      class="link"
-                      target="_blank"
-                      >Live</a
-                    >
-                  </p>
-                  <div class="row d-flex justify-content-center">
-                    <p class="tech-used"><b>Technologies Used</b></p>
-                  </div>
-                  <div class="row tech-used">
-                    <div class="col-6">
-                      <ul class="list-inline">
+        </div>
+      </section>
+
+      <section class="section-tours" id="projects">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">My Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >Oui Eat</span
+                  >
+                </h4>
+
+                <div class="card__details card__details-front">
+                  <ul>
+                    <li>inspired by Uber Eats</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <span>Technologies Used</span>
+                    <div class="card__details d-flex">
+                      <ul>
                         <li>React.js</li>
                         <li>Node.js</li>
-                        <li>JavaScript</li>
+                        <li>Express.js</li>
+                        <li>JavaScript (ES6)</li>
                         <li>HTML5 & CSS3</li>
-                        <li>Bootstrap 4</li>
                       </ul>
-                    </div>
-                    <div class="col-6">
-                      <ul class="list-inline">
+                      <ul>
+                        <li>Bootstrap4</li>
                         <li>PostgreSQL</li>
-                        <li>Express</li>
                         <li>npm</li>
                         <li>Babel</li>
                         <li>Webpack</li>
                       </ul>
                     </div>
-                  </div>
 
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">CYKEL</h2>
-                  <p class="item-intro text-muted">
-                    A front-end web application that locates bike stations
-                    around the world
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/cykel-thumbnail-1.PNG"
-                    alt=""
-                  />
-                  <p>
                     <a
-                      href="https://github.com/taehykim/bike-stations-around-the-world"
-                      class="tech-used"
+                      href="https://github.com/taehykim/oui-eat"
                       target="_blank"
+                      class="btn btn--white mr-3"
                       >GitHub</a
                     >
                     <a
-                      href="https://taehykim.github.io/bike-stations-around-the-world/"
-                      class="tech-used"
+                      href="https://ouieat.taehykim.com"
                       target="_blank"
+                      class="btn btn--white"
                       >Live</a
                     >
-                  </p>
-                  <div class="row d-flex justify-content-center">
-                    <p class="tech-used"><b>Technologies Used</b></p>
                   </div>
-                  <div class="row tech-used">
-                    <div class="col-12">
-                      <ul class="list-inline">
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Bootstrap 4</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >CYKEL</span
+                  >
+                </h4>
 
-    <!-- Modal 3 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal3"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+                <div class="card__details card__details-front">
+                  <ul>
+                    <li>For Bike Lovers</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <span>Technologies Used</span>
+                    <div class="card__details d-flex">
+                      <ul>
+                        <li>JavaScript (ES5/ES6)</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Bootstrap4</li>
+                        <li>jQuery</li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://github.com/taehykim/bike-stations-around-the-world"
+                      target="_blank"
+                      class="btn btn--white mr-3"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://taehykim.github.io/bike-stations-around-the-world"
+                      target="_blank"
+                      class="btn btn--white"
+                      >Live</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Chanel Store</h2>
-                  <p class="item-intro text-muted">
-                    A full stack Node.js and React shopping cart
-                    app
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/chanel-thumbnail.JPEG"
-                    alt=""
-                  />
-                  <p>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Chanel Store</span
+                  >
+                </h4>
+
+                <div class="card__details card__details-front">
+                  <ul>
+                    <li>Summer Ready with Chanel</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <span>Technologies Used</span>
+                    <div class="card__details d-flex">
+                      <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>JavaScript (ES6)</li>
+                        <li>HTML5 & CSS3</li>
+                      </ul>
+                      <ul>
+                        <li>Bootstrap4</li>
+                        <li>PostgreSQL</li>
+                        <li>npm</li>
+                        <li>Babel</li>
+                        <li>Webpack</li>
+                      </ul>
+                    </div>
                     <a
                       href="https://github.com/taehykim/chanel-store"
-                      class="tech-used"
                       target="_blank"
+                      class="btn btn--white mr-3"
                       >GitHub</a
                     >
                     <a
                       href="https://coffeefarm.taehykim.com/"
-                      class="tech-used"
                       target="_blank"
+                      class="btn btn--white"
                       >Live</a
                     >
-                  </p>
-                  <div class="row d-flex justify-content-center">
-                    <p class="tech-used"><b>Technologies Used</b></p>
                   </div>
-                  <div class="row tech-used">
-                    <div class="col-6">
-                      <ul class="list-inline">
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>JavaScript</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Bootstrap 4</li>
-                      </ul>
-                    </div>
-                    <div class="col-6">
-                      <ul class="list-inline">
-                        <li>PostgreSQL</li>
-                        <li>Express</li>
-                        <li>npm</li>
-                        <li>Babel</li>
-                        <li>Webpack</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Modal 4 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal4"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+      <section class="section-features" id="skills">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Skills and Tools</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/color/480/000000/javascript.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">JavaScript</h3>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/04-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/color/480/000000/react-native.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">React.js</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/color/480/000000/nodejs.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">Node.js</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/color/480/000000/postgreesql.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">PostgreSQL</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/express.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">Express.js</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/html-icon.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">HTML5</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/css.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">CSS3</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/color/480/000000/bootstrap.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">Bootstrap4</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/ios-filled/500/000000/jquery.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">jQuery</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/color/480/000000/sass.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">Sass</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/git.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">Git</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img
+                src="https://img.icons8.com/fluent/240/000000/github.png"
+                class="feature-box__img"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">GitHub</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/aws.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">AWS</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/vscode.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">VS Code</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/npm.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">npm</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/webpack.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">webpack</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/babel.svg" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">Babel</h3>
+            </div>
+          </div>
+
+          <div class="col-1-of-3 col-6 col-md-4 m-0 mb-5">
+            <div class="feature-box">
+              <img src="img/nginx.png" class="feature-box__img" />
+              <h3 class="heading-tertiary u-margin-bottom-small">Nginx</h3>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- Modal 5 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+    <section class="footer" id="contact">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">Contact</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <img src="img/github.png" class="feature-box__img" />
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              <a href="https://github.com/taehykim" target="_blank"
+                >My GitHub</a
+              >
+            </h3>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/05-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <img src="img/linkedin.png" class="feature-box__img" />
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              <a href="https://www.linkedin.com/in/tennikim/" target="_blank"
+                >My LinkedIn</a
+              >
+            </h3>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <img src="img/gmail.png" class="feature-box__img" />
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              <a href="mailto:tiarekim@gmail.com">My Email</a>
+            </h3>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Modal 6 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal6"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/06-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div
+        class="row bg-light p-3 d-flex justify-content-around align-items-center"
+      >
+        <div class="col text-center">
+          Built by
+          <a
+            href="https://www.linkedin.com/in/tennikim/"
+            class="footer__link"
+            target="_blank"
+            >Tia Kim</a
+          >
+        </div>
+        <div class="col text-center">
+          Design credit to
+          <a
+            href="https://www.udemy.com/course/advanced-css-and-sass/"
+            class="footer__link"
+            target="_blank"
+            >Jonas Schmedtmann</a
+          >
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <footer class="footer">
+      <div class="row text-center">
+        <span>Contact</span>
+      </div>
+      <div class="row">
+        <div class="col">
+          Orange County, California
+        </div>
+        <div class="col">
+          <a href="mailto:tiarekim@gmail.com" target="_blank">tiarekim@gmail.com</a>
+        </div>
+        <!-- <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+    <!-- <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by
+            <a
+              href="https://www.linkedin.com/in/tennikim/"
+              class="footer__link"
+              target="_blank"
+              >Tia Kim</a
+            >
+            <br />
+            Design credit to
+            <a
+              href="https://www.udemy.com/course/advanced-css-and-sass/"
+              class="footer__link"
+              target="_blank"
+              >Jonas Schmedtmann</a
+            >
+          </p>
+        </div> -->
+    <!-- </div>
+    </footer> -->
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!--
+    <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">Col 1 of 2</div>
+        <div class="col-1-of-2">Col 1 of 2</div>
+      </div>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+      </div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-2-of-3">Col 2 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-2-of-4">Col 2 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-3-of-4">Col 3 of 4</div>
+      </div>
+    </section>
+    -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>
